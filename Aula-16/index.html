@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula - 16</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <hr>
+    <br>
+    <form action="procesarForm.php" method="get"></form>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome"><br><br>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email">
+    <br><br>
+    
+    <p>Deixe um comentário aqui:</p>
+    <textarea name="comentário" cols="50" rows="10" placeholder="Escreva aqui um comentário" readonly></textarea>
+    <br><br>
+    <label for="Email">Email:</label>
+    <input type="Email" id="email" name="Email">
+    <br><br>
+    <label for="Senha">Senha:</label>
+    <input type="senha" id="senha" name="senha">
+    <br>
+    <p><label for="">Selecione opções:</label></p>
+    <input type="checkbox" name="opção1" value="opção1"> Opção 1
+    <br>
+    <input type="checkbox" name="opção2" value="opção2"> Opção 2
+    <br>
+    <input type="checkbox" name="opção3" value="opção3"> Opção 3
+    
+    <p><label for="">Selecione opções:</label></p>
+    <input type="radio" name="opção1" value="opção1"> Opção 1
+    <br>
+    <input type="radio" name="opção1" value="opção2"> Opção 2
+    <br>
+    <input type="radio" name="opção1" value="opção3"> Opção 3
+    <br><br>
+    <label for="esporte">Esporte favorito: </label>
+    <select id="esporte" name="esporte">
+        <option value="">Selecione</option>
+        <option value="Futebol">Futebol</option>
+        <option value="Basquete">Basquete</option>
+        <option value="Vôlei">Vôlei</option>
+        <option value="Corrida">Corrida</option>
+    </select>
+    <br><br>
+    <label for="idade">Idade:</label>
+    <select name="idade" id="idade">
+        <option value="">Selecione</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Enviar e-mail">
+    <input type="reset" value="Limpar">
+    <input type="button" value="Voltar">
+
+</body>
+</html>
