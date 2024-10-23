@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula - 11</title>
+    <meta name="author" content="Vinicius">
+</head>
+<body>
+
+    <h1>Tags de Formatação de Texto</h1> <br><br>
+
+    <h2>Tags para itálico</h2>
+
+    <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere incidunt voluptates mollitia, ea qui consequuntur ducimus dicta provident porro odit reprehenderit illo fuga voluptas eligendi saepe laborum? Error, animi rem!</i></p>
+
+    <p><em>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error maxime repudiandae autem optio sunt, eaque eum totam deleniti aut explicabo doloremque cupiditate ea sint quod laboriosam corrupti incidunt, nisi debitis.</em></p> <hr>
+
+    <h1>Tags para Negrito</h1>
+
+    <p><b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non eius libero ut eligendi voluptatibus accusantium temporibus aliquam corrupti. Officia iste nemo iure, inventore veritatis dolores et totam eum. Dicta, sed.</b></p>
+
+    <p><strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium dignissimos soluta itaque numquam culpa harum voluptas minus, eligendi voluptates ipsa nam? Laborum, aut sequi hic incidunt ullam suscipit ea quisquam.</strong></p> <hr>
+
+    <h2>Tags de tamanho</h2>
+
+    <p><big>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi similique eveniet, expedita dolorum iure eaque nihil tempora non nemo in atque consequuntur nostrum. Ut magni dicta itaque. Sapiente, consectetur minima.</big></p> <hr>
+
+    <p><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In dolorem magnam facilis vero! Sunt sequi quasi doloribus natus, laudantium corrupti necessitatibus sint dicta, porro adipisci eum eos voluptates. Voluptate, laboriosam?</small></p> <hr>
+
+    <h2>Tags de Texto Deletado</h2>
+
+    <p><striker>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis libero aut sint nihil modi inventore excepturi ab non suscipit, eligendi sed nobis nemo enim, aperiam voluptates cumque labore illum totam?</striker></p>
+
+    <p><del>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut culpa delectus excepturi illo? Eos suscipit alias fugit deserunt officiis. Quasi, pariatur aspernatur nemo magnam in iure ducimus debitis eius reiciendis.</del></p> <hr>
+
+    <h2>Tags para Texto Sublinhado</h2>
+
+    <p><u>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum natus quae cupiditate voluptatibus facilis blanditiis quam quis dolores. Quidem ipsa repellendus laudantium impedit fugit obcaecati, in labore cupiditate culpa maiores.</u></p>
+
+    <p><ins>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque ut distinctio consequuntur reiciendis, eveniet rerum deleniti, saepe architecto natus quas praesentium, mollitia similique animi necessitatibus vitae veniam officiis a!</ins></p> <hr>
+
+    <h2>Tags para Texto Sobescrito/Subscrito</h2>
+
+    <p><sup>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quo accusamus quas mollitia optio dolore, ab ratione tempora fuga explicabo dignissimos dolorum voluptates rerum quaerat voluptatum sapiente quisquam quod nihil!</sup></p>
+
+    <p><sub>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur vitae ut nulla adipisci quibusdam earum odio quos, officiis perspiciatis unde qui placeat! Aliquam aliquid neque iure quisquam culpa debitis placeat?</sub></p> <hr>
+
+    <h2>Tag para Trecho de Código</h2>
+
+    <pre><code>section .data
+        hello db 'Hello, World!',0x0A ; A string que será exibida seguida por um caractere de nova linha
+    
+    section .text
+        global _start ; A entrada principal para o programa
+    
+    _start:
+        ; Sistema de chamada para escrever na saída padrão
+        mov eax, 4         ; Número da chamada do sistema para sys_write (4)
+        mov ebx, 1         ; Descritor de arquivo para a saída padrão (stdout)
+        mov ecx, hello     ; Endereço da string para exibir
+        mov edx, 14        ; Comprimento da string (13 caracteres + 1 para a nova linha)
+        int 0x80           ; Interrupção para chamar o kernel
+    
+        ; Sistema de chamada para sair do programa
+        mov eax, 1         ; Número da chamada do sistema para sys_exit (1)
+        xor ebx, ebx       ; Código de saída 0
+        int 0x80           ; Interrupção para chamar o kernel
+    </code></pre> <hr>
+
+    <h2>Tag para Marcação</h2>
+
+    <p><mark>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum autem porro eveniet deleniti aspernatur corporis architecto, quasi, sapiente quae mollitia neque nesciunt sequi omnis cum pariatur expedita quidem corrupti aperiam.</mark></p> <hr>
+
+    <h2>Tags de Citação</h2>
+
+    <p><blockquote cite="https://uvv.br/portal-do-aluno/">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempora blanditiis nam officia quidem obcaecati voluptate itaque quaerat sunt. Dolorum quasi ipsum esse fugit ratione quisquam praesentium commodi similique! Quae!</blockquote></p>
+
+    <p><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta id, nemo nesciunt sequi deleniti cum accusantium pariatur, vel facilis tempora praesentium? Facilis voluptatum consequuntur quas cum accusantium harum vitae obcaecati.</q></p> <hr>
+
+    <h2>Tag para Abreviação</h2>
+
+    <p><abbr title="Lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque quaerat in ea, quam perspiciatis molestiae, rem facilis repudiandae, labore praesentium dolorem a vero necessitatibus accusamus exercitationem facere reiciendis doloribus nihil!</abbr></p> <hr>
+
+    <h2>Tag para Endereço</h2>
+
+    <p><address>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, officia obcaecati delectus, fugiat ea veniam ducimus molestias ratione dolores, libero dolorum maiores quos. In sequi ad voluptates necessitatibus ipsum deleniti!</address></p> <hr>
+
+    <p><bdo dir="itl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat ullam neque iusto vero iure quibusdam amet ipsam magnam. Quia, sunt amet excepturi ad odit alias a! Eos excepturi totam natus?</bdo></p>
+
+    <p><bdo dir="rtl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ullam vel sapiente placeat aperiam labore similique quasi assumenda illo sunt iusto accusamus, ipsam quod doloremque eaque aliquid rerum laborum rem!</bdo></p> <hr>
+
+    <a href="./listas.html">Entenda mais sobre listas!</a>
+
+</body>
+</html>
