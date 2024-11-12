@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script type="text/JavaScript">
+        document.writeln("Olá, meu código JavaScript! Usando o Document Writeln ")
+        </script>
+        <h1>Olá Mundo, JavaScript</h1>
+        
+        <p></p>
+        <script>
+        document.writeln("Olá, meu código JavaScript! Usando o Document Writeln pela segunda vez ")
+        </script>
+        <script type="text/JavaScript">
+            window.alert("Olá, meu código javaScript!")
+        </script>
+        
+        <hr>
+        
+        <div id='resposta'> </div>
+        <script>
+        document.getElementById('resposta').innerHTML= 'Resposta de saída: Olá Mundo'
+        </script>
+        
+        <p></p>
+        <script>
+        window.prompt("Olá, meu código JavaScript! Usando o Document Writenl pela segunda vez ")
+        </script>
+        <script>
+        window.confirm("Está gostando na JS?")
+        </script>
+
+<input id= "inputUsuario" size="60"> <button onclick="enviaResposta()">Enviar</button>
+<br>
+<script type="text/JavaScript">
+function enviaResposta() {
+var NOME = document.getElementById('inputUsuario').value;
+var SOBRENOME = document.getElementById('inputUsuario').value;
+window.alert('O nome é ' + NOME, + SOBRENOME);
+}
+</script> 
+</body>
+</html>
